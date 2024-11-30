@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const holeGame = new PlayingField();
   const holeGameElement = holeGame.createPlayingField();
   card.appendChild(holeGameElement);
-  alert(holeGameElement);
 
   const game = new Game(goblinElement, holeGameElement);
   setTimeout(() => game.letPlay(deadGoblins, lost), 1000);
