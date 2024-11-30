@@ -1,7 +1,7 @@
 export default class Game {
-  constructor(playingField, goblinElement) {
-    this.goblin = goblinElement;
+  constructor(goblinElement, playingField) {
     this.playingField = playingField;
+    this.goblin = goblinElement;
     this.activeHoleIndex = Math.floor(Math.random() * 16);
     this.playing = true;
   }
